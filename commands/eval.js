@@ -1,7 +1,7 @@
 class EvalCommand {
 
     static run(message, args) {
-        if (message.author.id !== client.ownerId) {
+        if (message.author.id !== message.client.ownerId) {
             message.channel.send(`${message.author} Somente o dono do bot pode usar este comando!`);
             return;
         }
