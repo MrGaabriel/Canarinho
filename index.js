@@ -41,6 +41,8 @@ let registerCommands = async () => {
                    console.log(`${"[COMMAND STATUS]".yellow} (${message.guild.name} -> #${message.channel.name}) ${message.author.tag} -> ${message.content} - OK! Finished in ${Date.now() - start}ms`);
                } catch (err) {
                    console.log(`${"[COMMAND STATUS]".yellow} (${message.guild.name} -> #${message.channel.name}) ${message.author.tag} -> ${message.content} - ERROR! ${err}`);
+
+                   message.channel.send(`${message.author} Um erro aconteceu durante a execução deste comando!`);
                }
            }
        });
