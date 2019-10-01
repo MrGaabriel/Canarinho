@@ -1,6 +1,14 @@
 class AvatarCommand {
     static run(message, args) {
-       messege.reply(message.author.displayAvatarURL)
+		const Discord = require("discord.js");
+
+		let embed = new Discord.RichEmbed();
+
+		embed.setTitle(message.author.tag);
+		embed.setColor("RED");
+		embed.setImage(message.author.displayAvatarURL);
+
+        message.channel.send({embed: embed});
     }
 
 }
