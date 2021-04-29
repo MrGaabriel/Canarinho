@@ -1,0 +1,22 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "08:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: mathjs
+    versions:
+    - 9.1.0
+    - 9.2.0
+    - 9.3.0
+    - 9.3.1
+  - dependency-name: discord.js
+    versions:
+    - 12.5.1
+    - 12.5.2
+  - dependency-name: enmap
+    versions:
+    - 5.8.4
