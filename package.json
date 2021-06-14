@@ -13,7 +13,7 @@
     "discord.js": "^11.3.2",
     "dotenv": "^6.0.0",
     "enmap": "^3.0.4",
-    "forever": "^0.15.3",
+    "forever": "^4.0.1",
     "mathjs": "^5.1.0",
     "readdir": "^0.1.0"
   }
